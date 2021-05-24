@@ -139,5 +139,6 @@ log=
 
 EOF
 
-/usr/bin/Xvfb &
-DISPLAY=:0 exec wine server/Wreckfest.exe -s server_config=server_config.cfg
+Xvfb &
+sleep 5s
+exec wine server/Wreckfest.exe -s server_config=server_config.cfg
